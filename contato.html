@@ -23,8 +23,126 @@
     </header>
     <main id="main">
         <form>
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome">
+            <h2>Dados do usuário</h2>
+            <label for="nome">Nome Completo: </label>
+            <input type="text" name="nome" id="nome" class="input-padrao" required>
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" class="input-padrao" required>
+
+            <label for="telefone">Telefone: </label>
+            <input type="tel" name="telefone" id="telefone" class="input-padrao" required>
+
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha" class="input-padrao" required>
+
+            <fieldset>
+                <legend>Sexo</legend>
+                <label for="sexo_user">
+                    <input type="radio" name="sexo" id="Masculino" value="Masculino" checked>
+                    Feminino
+                </label>
+                <label for="sexo_user">
+                    <input type="radio" name="sexo" id="Feminino" value="Feminino">
+                    Masculino
+                </label>
+            </fieldset>
+
+            <label for="data e hora ">Data e hora de nascimento: </label>
+            <input type="datetime-local" id="data e hora" name="data e hora">
+
+            <label for="UF">UF de nascimento</label>
+            <select name="UF" id="UF" class="input-padrao">
+                <option value="selecionar">Selecione </option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AM">Amazonas</option>
+                <option value="AP">Amapá</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
+            <label for="cor">Selecione sua cor favorita: </label>
+            <input type="color" id="cor" name="cor" value="#ff0000">
+
+            <label for="aniversário">Informe uma data especial: </label>
+            <input type="date" id="aniversário" name="aniversário">
+
+            <label for="hora">Que horas costuma acordar:</label>
+            <input type="time" id="hora" name="hora">
+
+            <label for="pessoa_fami">Quantas pessoas tem sua familia:</label>
+            <input type="number" id="pessoa_fami" name="pessoa_fami" min="1" max="30">
+
+            <label for="Url">Adicione a url do seu perfil na rede social :</label>
+            <input type="url" id="Url" name="Url">
+
+            <div>
+                <p>Quais suas preferências musicais:</p>
+                <input type="checkbox" id="style1" name="Rock" value="Rock">
+                <label for="style1">Rock </label>
+
+                <input type="checkbox" id="style2" name="Sertanejo" value="Sertanejo">
+                <label for="style2">Sertanejo </label>
+
+                <input type="checkbox" id="style3" name="Pagode" value="Pagode">
+                <label for="style2">Pagode </label>
+
+                <input type="checkbox" id="style4" name="Samba" value="Samba">
+                <label for="style2">Samba </label>
+
+                <input type="checkbox" id="style5" name="Funk" value="Funk">
+                <label for="style2">Funk </label>
+
+                <input type="checkbox" id="style6" name="Kpop" value="Kpop">
+                <label for="style2">Kpop </label>
+
+                <input type="checkbox" id="style7" name="Pop" value="Pop">
+                <label for="style2">Pop </label>
+
+                <input type="checkbox" id="style8" name="Forró" value="Forró">
+                <label for="style2">Forró </label>
+
+                <input type="checkbox" id="style9" name="Indie" value="Indie">
+                <label for="style2">Indie </label>
+
+                <input type="checkbox" id="style10" name="Gospel" value="Gospel">
+                <label for="style2">Gospel </label>
+
+                <input type="checkbox" id="style11" name="MPB" value="MPB">
+                <label for="style2">MPB </label>
+
+                <input type="checkbox" id="style12" name="Jazz" value="Jazz">
+                <label for="style2">Jazz </label>
+            </div>
+
+            <label for="arquivos">Selecione uma foto de perfil:</label>
+            <input type="file" id="arquivos" name="arquivos">
+
+            <input type="submit" name="enviar" class="botao">
+
+            <input type="reset">
         </form>
     </main>
     <footer>
