@@ -55,6 +55,15 @@ nav a:active {
 	background: #ffd39b;
 }
 
+#main_cont {
+	background: white;
+}
+
+#main_tab {
+	background: white;
+	text-align: center;
+}
+
 .roupas {
 	width: 50%;
 	margin: 0 auto;
@@ -199,9 +208,7 @@ fieldset {
 	box-sizing: border-box;
 }
 
-.botao {
-	font-weight: bold;
-}
+
 
 #name {
 	position: absolute;
@@ -261,6 +268,10 @@ fieldset {
 	right: 350px;
 }
 
+#cor input {
+	width: 20%;
+}
+
 #aniversario {
 	position: absolute;
 	width: 30%;
@@ -295,8 +306,9 @@ fieldset {
 	top: 1200px;
 	right: 900px;
 	display: inline-flex;
-	flex: 0 0 44.444444%;
 }
+
+
 
 #arquivos {
 	position: absolute;
@@ -307,11 +319,34 @@ fieldset {
 
 #botoes {
 	position: absolute;
-	width: 13%;
+	width: 30%;
 	top: 600px;
-	right: 1600px;
+	right: 100px;
 }
 
+table {
+	width: 600px;
+	margin: 30px auto;
+	border-collapse: collapse;
+}
+
+thead {
+	background: #ffd39b;
+	color: white;
+	text-align: center;	
+}
+
+thead th {
+	padding-right: 4%;
+	margin-right: 4%;	
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 9px 15px;
+	font-size: 18px;
+	color: #964b00;
+}
 
 footer img {
 	width: 100%;
