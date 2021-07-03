@@ -24,22 +24,31 @@
     <main id="main">
         <form>
             <h2>Dados do usuário</h2>
-            <label for="nome">Nome Completo: </label>
-            <input type="text" name="nome" id="nome" class="input-padrao" required>
 
-            <label for="email">E-mail: </label>
-            <input type="email" name="email" id="email" class="input-padrao" required>
+            <div id="name">
+                <label for="name">Nome Completo: </label>
+                <input type="text" name="nome" class="input-padrao" required>
+            </div>
 
-            <label for="telefone">Telefone: </label>
-            <input type="tel" name="telefone" id="telefone" class="input-padrao" required>
+            <div id="e-mail">
+                <label for="e-mail">E-mail: </label>
+                <input type="email" name="email" class="input-padrao" required>
+            </div>
 
-            <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="senha" class="input-padrao" required>
+            <div id="telefone">
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone" class="input-padrao" required>
+            </div>
 
-            <fieldset>
+            <div id="senha">
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" class="input-padrao" required>
+            </div>
+
+            <fieldset id="sexo_user">
                 <legend>Sexo</legend>
                 <label for="sexo_user">
-                    <input type="radio" name="sexo" id="Masculino" value="Masculino" checked>
+                    <input type="radio" name="sexo" id="Masculino" value="Masculino">
                     Feminino
                 </label>
                 <label for="sexo_user">
@@ -48,58 +57,73 @@
                 </label>
             </fieldset>
 
-            <label for="data e hora ">Data e hora de nascimento: </label>
-            <input type="datetime-local" id="data e hora" name="data e hora">
+            <div id="data_e_hora">
+                <label for="data e hora ">Data e hora de nascimento: </label>
+                <input type="datetime-local" name="data e hora" class="input-padrao">
+            </div>
 
-            <label for="UF">UF de nascimento</label>
-            <select name="UF" id="UF" class="input-padrao">
-                <option value="selecionar">Selecione </option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AM">Amazonas</option>
-                <option value="AP">Amapá</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espirito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-            </select>
+            <div id="UF">
+                <label for="UF">UF de nascimento</label>
+                <select name="UF" class="input-padrao" class="input-padrao">
+                    <option value="selecionar">Selecione </option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
 
-            <label for="cor">Selecione sua cor favorita: </label>
-            <input type="color" id="cor" name="cor" value="#ff0000">
+            <div id="cor">
+                <label for="cor">Selecione sua cor favorita: </label>
+                <input type="color" name="cor" value="#ff0000">
+            </div>
 
-            <label for="aniversário">Informe uma data especial: </label>
-            <input type="date" id="aniversário" name="aniversário">
+            <div id="aniversario">
+                <label for="aniversário">Informe uma data especial: </label>
+                <input type="date" name="aniversário" class="input-padrao">
+            </div>
 
-            <label for="hora">Que horas costuma acordar:</label>
-            <input type="time" id="hora" name="hora">
+            <div id="hora">
+                <label for="hora">Que horas costuma acordar:</label>
+                <input type="time" name="hora" class="input-padrao">
+            </div>
 
-            <label for="pessoa_fami">Quantas pessoas tem sua familia:</label>
-            <input type="number" id="pessoa_fami" name="pessoa_fami" min="1" max="30">
+            <div id="pessoa_fami">
+                <label for="pessoa_fami">Quantas pessoas tem sua familia:</label>
+                <input type="number" name="pessoa_fami" min="1" max="30">
+            </div>
 
-            <label for="Url">Adicione a url do seu perfil na rede social :</label>
-            <input type="url" id="Url" name="Url">
+            <div id="Url">
+                <label for="Url">Adicione a url do seu perfil na rede social :</label>
+                <input type="url" name="Url" class="input-padrao">
+            </div>
 
-            <div>
-                <p>Quais suas preferências musicais:</p>
+            <div id="estilo">
+                <label for="estilo">Quais as suas preferências musicais?</label>
+
                 <input type="checkbox" id="style1" name="Rock" value="Rock">
                 <label for="style1">Rock </label>
 
@@ -137,17 +161,15 @@
                 <label for="style2">Jazz </label>
             </div>
 
-            <label for="arquivos">Selecione uma foto de perfil:</label>
-            <input type="file" id="arquivos" name="arquivos">
+            <div id="arquivos">
+                <label for="arquivos">Selecione uma foto de perfil:</label>
+                <input type="file" name="arquivos">
+            </div>
 
-            <input type="submit" name="enviar" class="botao">
+            <div id="botoes">
+                <a href="tabela.html"><input type="submit" name="enviar" class="botao"></a>
+                <input type="reset">
+            </div>
 
-            <input type="reset">
         </form>
     </main>
-    <footer>
-        <img src=imagens/fundo.png>
-    </footer>
-</body>
-
-</html>

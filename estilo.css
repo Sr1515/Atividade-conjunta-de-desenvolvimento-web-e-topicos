@@ -165,6 +165,7 @@ nav a:active {
 form {
 	width: 600px;
 	margin: 30px auto;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 form h2 {
@@ -183,16 +184,132 @@ fieldset {
 	border: 0 none;
 }
 
+.main form {
+	display: inline-block;
+	text-align: center;
+	flex: 0 0 44.444444%;
+}
+
+
 .input-padrao {
 	display: block;
 	margin: 0 0 20px;
 	padding: 10px 25px;
-	width: 100%;
+	width: 50%;
 	box-sizing: border-box;
 }
 
 .botao {
 	font-weight: bold;
+}
+
+#name {
+	position: absolute;
+	width: 30%;
+	top: 350px;
+	right: 650px;
+}
+
+#e-mail {
+	position: absolute;
+	width: 30%;
+	top: 350px;
+	right: 350px;
+}
+
+#telefone {
+	position: absolute;
+	width: 30%;
+	top: 450px;
+	right: 650px;
+}
+
+#senha {
+	position: absolute;
+	width: 30%;
+	top: 450px;
+	right: 350px;
+}
+
+#sexo_user {
+	position: absolute;
+	width: 13%;
+	top: 550px;
+	right: 965px;
+	display: inline-flex;
+}
+
+
+#data_e_hora {
+	position: absolute;
+	width: 30%;
+	top: 550px;
+	right: 350px;
+}
+
+#UF {
+	position: absolute;
+	width: 30%;
+	top: 650px;
+	right: 650px;
+}
+
+#cor {
+	position: absolute;
+	width: 30%;
+	top: 655px;
+	right: 350px;
+}
+
+#aniversario {
+	position: absolute;
+	width: 30%;
+	top: 750px;
+	right: 650px;
+}
+
+#hora {
+	position: absolute;
+	width: 30%;
+	top: 750px;
+	right: 350px;
+}
+
+#pessoa_fami {
+	position: absolute;
+	width: 20%;
+	top: 850px;
+	right: 838px;
+}
+
+#Url {
+	position: absolute;
+	width: 30%;
+	top: 850px;
+	right: 350px;
+}
+
+#estilo {
+	position: absolute;
+	width: 30%;
+	top: 1200px;
+	right: 900px;
+	display: inline-flex;
+	flex: 0 0 44.444444%;
+}
+
+#arquivos {
+	position: absolute;
+	width: 13%;
+	top: 600px;
+	right: 200px;
+}
+
+#botoes {
+	position: absolute;
+	width: 13%;
+	top: 600px;
+	right: 1600px;
 }
 
 
