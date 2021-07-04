@@ -346,7 +346,17 @@ td, th {
 	padding: 9px 15px;
 	font-size: 18px;
 	color: #964b00;
+
 }
+
+.prefer {
+	text-align: center;
+	font-size: 25px;
+	margin: 0 0 1em;
+	font-family: 'Times New Roman', Times, serif;
+	padding: 3em 0;
+}
+
 
 footer img {
 	width: 100%;
