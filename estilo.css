@@ -171,6 +171,15 @@ nav a:active {
 	color: #964b00;
 }
 
+#sex {
+	margin-left: 5px;
+}
+
+#dados {
+	margin-bottom: 40px;
+	margin-left: -55px;
+}
+
 .container {
 	display: flex;
     flex-direction: row;
@@ -185,7 +194,7 @@ nav a:active {
 }
 
 #data_e_hora {
-	margin-left: 25px;
+	margin-left: 19px;
 }
 
 #pessoa_fami {
@@ -201,7 +210,7 @@ nav a:active {
 }
 
 #botoes {
-	margin-left: -70px;
+	margin-left: -40px;
 	margin-bottom: 100px;
 	font-style: bold;
 }
@@ -209,6 +218,10 @@ nav a:active {
 #arquivos {
 	margin-left: -60px;
 	margin-bottom: 60px;
+}
+
+#sexo {
+	margin: -30px;
 }
 
 

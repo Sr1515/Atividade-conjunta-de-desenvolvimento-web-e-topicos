@@ -24,182 +24,183 @@
     </header>
     <main id="main_cont" style="text-align: center !important;">
 
-        <h2>Dados do usuário</h2>
+        <h2 id="dados">Dados do usuário</h2>
+        <form>
 
-        <div class="container">
-            <br>
-            <div id="name" class="input-padrao">
-                <label for="name" class="centralizar">Nome Completo: </label>
+            <div class="container">
                 <br>
-                <input type="text" name="nome" required style="width: 200px;">
-            </div>
-
-            <div id="e-mail" class="input-padrao">
-                <label for="e-mail" class="centralizar">Email: </label>
-                <br>
-                <input type="email" name="email" required style="width: 200px;">
-            </div>
-        </div>
-
-        <div class="container">
-            <br>
-            <div id="telefone" class="input-padrao">
-                <label for="telefone" class="centralizar">Telefone: </label>
-                <br>
-                <input type="tel" name="telefone" required style="width: 200px;">
-            </div>
-
-            <div id="senha" class="input-padrao">
-                <label for="senha" class="centralizar">Senha: </label>
-                <br>
-                <input type="password" name="senha" required style="width: 200px;">
-            </div>
-        </div>
-
-        <div class="container">
-            <br>
-            <fieldset id="sexo_user" class="input-padrao">
-                <legend>Sexo</legend>
-                <label for="sexo_user" class="centralizar">
+                <div id="name" class="input-padrao">
+                    <label for="name" class="centralizar">Nome Completo: </label>
                     <br>
-                    <input type="radio" name="sexo" id="Masculino" value="Masculino">Masculino
-                </label>
-                <label for="sexo_user" class="centralizar">
+                    <input type="text" name="nome" required style="width: 200px;" required>
+                </div>
+
+                <div id="e-mail" class="input-padrao">
+                    <label for="e-mail" class="centralizar">Email: </label>
                     <br>
-                    <input type="radio" name="sexo" id="Feminino" value="Feminino">Feminino
-                </label>
+                    <input type="email" name="email" required style="width: 200px;" required>
+                </div>
+            </div>
+
+            <div class="container">
+                <br>
+                <div id="telefone" class="input-padrao">
+                    <label for="telefone" class="centralizar">Telefone: </label>
+                    <br>
+                    <input type="tel" name="telefone" required style="width: 200px;" required>
+                </div>
+
+                <div id="senha" class="input-padrao">
+                    <label for="senha" class="centralizar">Senha: </label>
+                    <br>
+                    <input type="password" name="senha" required style="width: 200px;" required>
+                </div>
+            </div>
+
+            <div class="container">
+                <br>
+                <fieldset id="sexo_user" class="input-padrao">
+                    <legend>Sexo</legend>
+                    <label for="sexo_user" class="centralizar">
+                        <br>
+                        <input type="radio" name="sexo" id="Masculino" value="Masculino">Masculino
+                    </label>
+                    <label id="sex" for="sexo_user" class="centralizar">
+                        <br>
+                        <input type="radio" name="sexo" id="Feminino" value="Feminino">Feminino
+                    </label>
+                </fieldset>
+
+                <div id="data_e_hora" class="input-padrao">
+                    <label for="data e hora" class="centralizar">Data e hora nascimento: </label>
+                    <br>
+                    <input type="datetime-local" name="data e hora" style="width: 200px;" required>
+                </div>
+            </div>
+
+            <div class="container">
+                <br>
+                <div id="UF" class="input-padrao">
+                    <label for="UF" class="centralizar">UF de nascimento</label>
+                    <br>
+                    <select name="UF" style="width: 200px;">
+                        <option value="selecionar">Selecione </option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+
+                <div id="cor" class="input-padrao">
+                    <label for="cor" class="centralizar">Cor favorita: </label>
+                    <br>
+                    <input type="color" name="cor" value="#ff0000" style="width: 200px;" required>
+                </div>
+            </div>
+
+            <div class="container">
+                <br>
+                <div id="aniversario" class="input-padrao">
+                    <label for="aniversário" class="centralizar">Data especial: </label>
+                    <br>
+                    <input type="date" name="aniversário" style="width: 200px;" required>
+                </div>
+
+                <div id="hora" class="input-padrao">
+                    <label for="hora" class="centralizar">hora que acorda:</label>
+                    <br>
+                    <input type="time" name="hora" style="width: 200px;" required>
+                </div>
+            </div>
+
+            <div class="container">
+                <br>
+                <div id="pessoa_fami" class="input-padrao">
+                    <label for="pessoa_fami" class="centralizar">Pessoas na familia:</label>
+                    <br>
+                    <input type="number" name="pessoa_fami" min="1" max="30" style="width: 200" required>
+                </div>
+
+                <div id="Url">
+                    <label for="Url" class="centralizar">Rede Social :</label>
+                    <br>
+                    <input type="url" name="Url" style="width: 200px;" required>
+                </div>
+            </div>
+
+            <div class="container">
+                <br>
+                <fieldset id="estilo">
+                    <div>
+                        <label>Quais as suas preferências musicais?</label><br><br>
+                    </div>
+                    <input type="checkbox" id="style1" name="Rock" value="Rock">
+                    <label for="style1">Rock </label>
+                    <input type="checkbox" id="style2" name="Sertanejo" value="Sertanejo">
+                    <label for="style2">Sertanejo </label>
+                    <input type="checkbox" id="style3" name="Pagode" value="Pagode">
+                    <label for="style2">Pagode </label>
+                    <input type="checkbox" id="style4" name="Samba" value="Samba">
+                    <label for="style2">Samba </label>
+                    <br>
+                    <input type="checkbox" id="style5" name="Funk" value="Funk">
+                    <label for="style2">Funk </label>
+                    <input type="checkbox" id="style6" name="Kpop" value="Kpop">
+                    <label for="style2">Kpop </label>
+                    <input type="checkbox" id="style7" name="Pop" value="Pop">
+                    <label for="style2">Pop </label>
+                    <input type="checkbox" id="style8" name="Forró" value="Forró">
+                    <label for="style2">Forró </label>
+                    <input type="checkbox" id="style9" name="Indie" value="Indie">
+                    <label for="style2">Indie </label>
+                    <input type="checkbox" id="style10" name="Gospel" value="Gospel">
+                    <label for="style2">Gospel </label>
+                    <input type="checkbox" id="style11" name="MPB" value="MPB">
+                    <label for="style2">MPB </label>
+                    <input type="checkbox" id="style12" name="Jazz" value="Jazz">
+                    <label for="style2">Jazz </label>
+            </div>
             </fieldset>
 
-            <div id="data_e_hora" class="input-padrao">
-                <label for="data e hora" class="centralizar">Data e hora nascimento: </label>
-                <br>
-                <input type="datetime-local" name="data e hora" style="width: 200px;">
-            </div>
-        </div>
-
-        <div class="container">
             <br>
-            <div id="UF" class="input-padrao">
-                <label for="UF" class="centralizar">UF de nascimento</label>
+            <div id="arquivos">
+                <label for="arquivos">Selecione uma foto de perfil:</label>
                 <br>
-                <select name="UF" style="width: 200px;">
-                    <option value="selecionar">Selecione </option>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espirito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                </select>
+                <input type="file" name="arquivos">
+            </div>
             </div>
 
-            <div id="cor" class="input-padrao">
-                <label for="cor" class="centralizar">Cor favorita: </label>
+            <div class="container">
                 <br>
-                <input type="color" name="cor" value="#ff0000" style="width: 200px;">
-            </div>
-        </div>
-
-        <div class="container">
-            <br>
-            <div id="aniversario" class="input-padrao">
-                <label for="aniversário" class="centralizar">Data especial: </label>
-                <br>
-                <input type="date" name="aniversário" style="width: 200px;">
-            </div>
-
-            <div id="hora" class="input-padrao">
-                <label for="hora" class="centralizar">hora que acorda:</label>
-                <br>
-                <input type="time" name="hora" style="width: 200px;">
-            </div>
-        </div>
-
-        <div class="container">
-            <br>
-            <div id="pessoa_fami" class="input-padrao">
-                <label for="pessoa_fami" class="centralizar">Pessoas na familia:</label>
-                <br>
-                <input type="number" name="pessoa_fami" min="1" max="30" style="width: 200">
-            </div>
-
-            <div id="Url">
-                <label for="Url" class="centralizar">Rede Social :</label>
-                <br>
-                <input type="url" name="Url" style="width: 200px;">
-            </div>
-        </div>
-
-        <div class="container">
-            <br>
-            <fieldset id="estilo">
-                <div>
-                    <label>Quais as suas preferências musicais?</label><br><br>
+                <div id="botoes">
+                    <input type="submit" name="enviar" class="botao" style="width: 200px;">
+                    <input type="reset" style="width: 200px;">
                 </div>
-                <input type="checkbox" id="style1" name="Rock" value="Rock">
-                <label for="style1">Rock </label>
-                <input type="checkbox" id="style2" name="Sertanejo" value="Sertanejo">
-                <label for="style2">Sertanejo </label>
-                <input type="checkbox" id="style3" name="Pagode" value="Pagode">
-                <label for="style2">Pagode </label>
-                <input type="checkbox" id="style4" name="Samba" value="Samba">
-                <label for="style2">Samba </label>
-                <br>
-                <input type="checkbox" id="style5" name="Funk" value="Funk">
-                <label for="style2">Funk </label>
-                <input type="checkbox" id="style6" name="Kpop" value="Kpop">
-                <label for="style2">Kpop </label>
-                <input type="checkbox" id="style7" name="Pop" value="Pop">
-                <label for="style2">Pop </label>
-                <input type="checkbox" id="style8" name="Forró" value="Forró">
-                <label for="style2">Forró </label>
-                <input type="checkbox" id="style9" name="Indie" value="Indie">
-                <label for="style2">Indie </label>
-                <input type="checkbox" id="style10" name="Gospel" value="Gospel">
-                <label for="style2">Gospel </label>
-                <input type="checkbox" id="style11" name="MPB" value="MPB">
-                <label for="style2">MPB </label>
-                <input type="checkbox" id="style12" name="Jazz" value="Jazz">
-                <label for="style2">Jazz </label>
-        </div>
-        </fieldset>
-
-        <br>
-        <div id="arquivos">
-            <label for="arquivos">Selecione uma foto de perfil:</label>
-            <br>
-            <input type="file" name="arquivos">
-        </div>
-        </div>
-
-        <div class="container">
-            <br>
-            <div id="botoes">
-                <input type="submit" name="enviar" class="botao" style="width: 200px;">
-                <input type="reset" style="width: 200px;">
             </div>
-        </div>
 
         </form>
     </main>
