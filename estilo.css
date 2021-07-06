@@ -171,8 +171,10 @@ nav a:active {
 	color: #964b00;
 }
 
-#sex {
-	margin-left: 5px;
+
+form label, input {
+	font-size: 20px;
+	margin: 0 0 10px;
 }
 
 #dados {
@@ -194,8 +196,17 @@ nav a:active {
 	margin-bottom: 30px;
 }
 
+#name {
+	margin-left: -20px;
+}
+
+
+#telefone {
+	margin-left: -20px;
+}
+
 #data_e_hora {
-	margin-left: 19px;
+	margin-left: 20px;
 }
 
 #pessoa_fami {
@@ -203,7 +214,7 @@ nav a:active {
 }
 
 #Url {
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
 #estilo {
@@ -216,13 +227,17 @@ nav a:active {
 	font-style: bold;
 }
 
+#UF {
+	margin-right: 60px;
+}
+
 #arquivos {
 	margin-left: -60px;
 	margin-bottom: 60px;
 }
 
-#sexo {
-	margin: -30px;
+#sexo_user {
+	margin-right: 10px;
 }
 
 
