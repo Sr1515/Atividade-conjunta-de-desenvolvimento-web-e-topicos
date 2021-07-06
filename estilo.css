@@ -171,157 +171,50 @@ nav a:active {
 	color: #964b00;
 }
 
-form {
-	width: 600px;
-	margin: 30px auto;
-	font-family: 'Times New Roman', Times, serif;
-}
-
-form h2 {
-	text-align: center;
-	font-size: 1.8em;
-
-}
-
-form label, form legend {
-	display: block;
-	margin: 0 0 10px;
-	font-size: 20px;
-}
-
-fieldset {
-	border: 0 none;
-}
-
-.main form {
-	display: inline-block;
-	text-align: center;
+.container {
+	display: flex;
+    flex-direction: row;
+	justify-content: center;
 	flex: 0 0 44.444444%;
 }
 
-
 .input-padrao {
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 25px;
-	width: 50%;
-	box-sizing: border-box;
+	margin-left: 0px;
+	margin-right: 50px;
+	margin-bottom: 30px;
 }
-
-
-
-#name {
-	position: absolute;
-	width: 30%;
-	top: 350px;
-	right: 650px;
-}
-
-#e-mail {
-	position: absolute;
-	width: 30%;
-	top: 350px;
-	right: 350px;
-}
-
-#telefone {
-	position: absolute;
-	width: 30%;
-	top: 450px;
-	right: 650px;
-}
-
-#senha {
-	position: absolute;
-	width: 30%;
-	top: 450px;
-	right: 350px;
-}
-
-#sexo_user {
-	position: absolute;
-	width: 13%;
-	top: 550px;
-	right: 965px;
-	display: inline-flex;
-}
-
 
 #data_e_hora {
-	position: absolute;
-	width: 30%;
-	top: 550px;
-	right: 350px;
-}
-
-#UF {
-	position: absolute;
-	width: 30%;
-	top: 650px;
-	right: 650px;
-}
-
-#cor {
-	position: absolute;
-	width: 30%;
-	top: 655px;
-	right: 350px;
-}
-
-#cor input {
-	width: 20%;
-}
-
-#aniversario {
-	position: absolute;
-	width: 30%;
-	top: 750px;
-	right: 650px;
-}
-
-#hora {
-	position: absolute;
-	width: 30%;
-	top: 750px;
-	right: 350px;
+	margin-left: 25px;
 }
 
 #pessoa_fami {
-	position: absolute;
-	width: 20%;
-	top: 850px;
-	right: 838px;
+	margin-left: -40px;
 }
 
 #Url {
-	position: absolute;
-	width: 30%;
-	top: 850px;
-	right: 350px;
+	margin-left: 40px;
 }
 
 #estilo {
-	position: absolute;
-	width: 30%;
-	top: 1200px;
-	right: 900px;
-	display: inline-flex;
-}
-
-
-
-#arquivos {
-	position: absolute;
-	width: 13%;
-	top: 600px;
-	right: 200px;
+	margin-left: -60px;
 }
 
 #botoes {
-	position: absolute;
-	width: 30%;
-	top: 600px;
-	right: 100px;
+	margin-left: -70px;
+	margin-bottom: 100px;
+	font-style: bold;
+}
+
+#arquivos {
+	margin-left: -60px;
+	margin-bottom: 60px;
+}
+
+
+.centralizar {
+	text-align: left !important;
+	float: left;
 }
 
 table {
@@ -336,17 +229,16 @@ thead {
 	text-align: center;	
 }
 
-thead th {
-	padding-right: 4%;
-	margin-right: 4%;	
-}
-
 td, th {
 	border: 1px solid black;
 	padding: 9px 15px;
 	font-size: 18px;
 	color: #964b00;
 
+}
+
+fieldset {
+	border: 0
 }
 
 .prefer {
